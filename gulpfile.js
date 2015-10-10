@@ -3,10 +3,6 @@ var marko = require('gulp-marko');
  
 gulp.task('marko', function(){
   gulp.src(['src/*.marko'])
-  .pipe(marko({
-      renderParams: {
-          title: 'Hello World'
-      }
-  }))
+  .pipe(marko())
   .pipe(gulp.dest('build'));
 });
